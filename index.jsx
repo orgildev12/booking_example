@@ -16,9 +16,9 @@ import { useTranslations } from 'next-intl';
 
 const Booking = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const locale = useLocale();
   const t = useTranslations();
-
+// орчуулгуудаа бүрэн оруулаад яваарай. зарим component өөр хэлний хувилбар нь байхгүйн 
+// улмаас харагдахгүй тохиолдол их байгаа.
 
   return (
     <motion.div

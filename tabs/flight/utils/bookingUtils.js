@@ -2,7 +2,7 @@
 // Single Responsibility Principle хэрэглэх
 // Жишээ нь энэ fixFlightDataForAmedeus нь digital.miat луу явдаг бүх хүсэлтийг handle хийж чаддаг мөртлөө
 // өөрөө тус тусын үүрэгтэй жижиг функцуудыг дотроо ашигладаг болохоор өөрчлөлт хийх эсвэл debug хийвэл 
-// зөвхөн тэр жижиг function-тойгоо л ажиллаж болно.
+// зөвхөн тэр жижиг function-тайгаа л ажиллаж болно.
 
 // Format a date safely
 function formatDate(date) {

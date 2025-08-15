@@ -61,7 +61,7 @@ export function useMileAuthentication(form, isMulticity) {
         passengerTypeCode: 'ADT'
       };
 
-      if (!isMulticity) {
+      if (!isMulticity) { // Multicity booking дээр энэ api-ыг дуудахгүй бас өөр postToNewTab хэрэглэдэг гэж ойлгосон.
         try {
           const res2 = await instance({
             method: 'get',

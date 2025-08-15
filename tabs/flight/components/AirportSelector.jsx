@@ -3,7 +3,7 @@ import Highlighter from 'react-highlight-words';
 import { twMerge } from 'tailwind-merge';
 import { useTranslations } from 'next-intl';
 
-// [locale] ын хэсэг дээр яг энэ component оо дахин ашиглаж болно.
+// Multicity booking хийдэг page дээр яг энэ component оо дахин ашиглаж болно.
 
 const AirportSelector = ({
   airports,

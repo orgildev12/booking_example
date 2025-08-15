@@ -1,6 +1,6 @@
 // Жишээ нь parseXmlToJson ийг код даяар маш олон зарласан байсан.
 
-function parseXmlToJson_1(xml) { // Яг энэ хувилбарыг ашиглаагүй хэрнээ зарлаад орхисон байсан.
+function parseXmlToJson_1(xml) {
     const json = {};
     for (const res of xml.matchAll(
       /(?:<(\w*)(?:\s[^>]*)*>)((?:(?!<\1).)*)(?:<\/\1>)|<(\w*)(?:\s*)*\/>/gm
@@ -12,7 +12,7 @@ function parseXmlToJson_1(xml) { // Яг энэ хувилбарыг ашигл�
     return json; 
 }
 
-function parseXmlToJson_2(xml) {
+function parseXmlToJson_2(xml) { // Яг энэ хувилбарыг ашиглаагүй хэрнээ зарлаад орхисон байсан.
     const json = {};
     for (const res of xml.matchAll(/(?:<(\w*)(?:\s[^>]*)*>)((?:(?!<\1).)*)(?:<\/\1>)|<(\w*)(?:\s*)*\/>/gm)) {
         const key = res[1] || res[3];
